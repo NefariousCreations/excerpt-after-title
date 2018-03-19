@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Excerpt After Title
  * Plugin URI: https://nefariouscreations.com.au
- * Description: A basic JS funtion to move the manual excerpt box after the title field.
+ * Description: A basic JS function to move the manual excerpt box after the title field.
  * Version: 1.0.0
  * Author: Nefarious Creations
  * Author URI: https://nefariouscreations.com.au
