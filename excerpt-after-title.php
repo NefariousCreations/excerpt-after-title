@@ -11,7 +11,7 @@
 /**
  * Move the post excerpt before the main WYSIWYG content editor and add a description.
  */
-add_action('acf/input/admin_head', function () {
+add_action('admin_footer', function () {
 
   if ( ('post' == get_current_screen()->id) or ('page' == get_current_screen()->id) ) {
     ?>
