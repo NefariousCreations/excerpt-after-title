@@ -32,7 +32,7 @@ add_action('admin_footer', function () {
                 // Move excerpt before main editor
                 $('.editor-post-title').after($('button:contains("Excerpt")').closest(".components-panel__body").addClass("is-opened post-excerpt").removeClass('components-panel__body'));
                 // Remove the panel button and header
-                $('.post-excerpt .components-panel__body-title').remove();
+                $('.editor-writing-flow .post-excerpt .components-panel__body-title').remove();
                 // Change the instruction text
                 $('.post-excerpt label').html('Write an excerpt <i>(Important)</i>');
             }
