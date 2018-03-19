@@ -3,7 +3,7 @@
 "type": "plugin",
 "license": "MIT",
 "description": "This is a simple plugin to move the WordPress post excerpt to site below the post/page title.",
-"homepage": "https://roots.io/bedrock/",
+"homepage": "https://github.com/nefariouscreations/excerpt-after-title",
 "authors": [
 {
 "name": "Corey Crowden",
