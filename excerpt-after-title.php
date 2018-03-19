@@ -38,13 +38,6 @@ add_action('acf/input/admin_head', function () {
             }
 
             /**
-            * Add instructions to the tags editor.
-            */
-            if ($('.gutenberg-editor-page .components-form-token-field__input-container').length) {
-                $('.components-form-token-field__input-container').append("<p class='description' style='padding:6px;'>Add tags here that describe the article. If you are utilising automated social media posts these will be used as hashtags.</p>");
-            }
-
-            /**
              * Classic Editor Changes
              */
 
@@ -64,13 +57,6 @@ add_action('acf/input/admin_head', function () {
              *  Add title before post content editor
              */
             $('body:not(.gutenberg-editor-page) #postdivrich').before("<hr><h3>Post Content</h3>");
-
-            /**
-             * Add instructions to the tags editor.
-             */
-            if ($('body:not(.gutenberg-editor-page) #tagsdiv-post_tag').length) {
-                $('#tagsdiv-post_tag .inside').prepend("<p class='description'>Add tags here that describe the article. If you are utilising automated social media posts these will be used as hashtags.</p>");
-            }
 
         });
       });
