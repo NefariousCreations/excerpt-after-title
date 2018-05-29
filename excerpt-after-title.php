@@ -9,6 +9,18 @@
  */
 
 /**
+ * Load Plugin Update Checker
+ */
+require 'vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+  'https://github.com/NefariousCreations/excerpt-after-title/',
+  __FILE__, //Full path to the main plugin file or functions.php.
+  'excerpt-after-title'
+);
+
+$myUpdateChecker->setBranch('master');
+
+/**
  * Move the post excerpt before the main WYSIWYG content editor and add a description.
  */
 add_action('admin_footer', function () {
