@@ -3,7 +3,7 @@
  * Plugin Name: Excerpt After Title by Nefarious Creations
  * Plugin URI: https://github.com/NefariousCreations/excerpt-after-title
  * Description: A basic JS function to move the manual excerpt box after the title field.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Nefarious Creations
  * Author URI: https://nefariouscreations.com.au
  */
@@ -30,14 +30,10 @@ add_action('admin_footer', function () {
 
     <script type="text/javascript">
       jQuery(function ($) {
-        $(document).ready(function () {
-
+        $(window).load(function () {
 
             /**
              * Gutenberg Changes
-             */
-
-            /**
              * Move the post excerpt to below the main title.
              */
             if ($('.gutenberg-editor-page button:contains("Excerpt")').length) {
@@ -51,9 +47,6 @@ add_action('admin_footer', function () {
 
             /**
              * Classic Editor Changes
-             */
-
-            /**
              * Move the post excerpt above the main content editor.
              */
             if ($('body:not(.gutenberg-editor-page) #postexcerpt').length) {
@@ -96,6 +89,10 @@ add_action('admin_footer', function () {
           font-size: 16px !important;
           line-height: 1.65 !important;
         }
+        .editor-post-excerpt__textarea {
+          height: auto !important;
+        }
+
         /**
          * Post Excerpt Styles (Classic)
          */
