@@ -3,7 +3,7 @@
  * Plugin Name: Excerpt After Title by Nefarious Creations
  * Plugin URI: https://github.com/NefariousCreations/excerpt-after-title
  * Description: A basic JS function to move the manual excerpt box after the title field.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Nefarious Creations
  * Author URI: https://nefariouscreations.com.au
  */
@@ -13,7 +13,7 @@
  */
 require 'vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://github.com/NefariousCreations/excerpt-after-title/',
+  'https://bitbucket.org/nefariouscreations/excerpt-after-title',
   __FILE__, //Full path to the main plugin file or functions.php.
   'excerpt-after-title'
 );
